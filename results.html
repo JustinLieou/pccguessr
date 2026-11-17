@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' blob: https://esm.sh https://maps.googleapis.com https://maps.gstatic.com https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.supabase.co https://esm.sh https://*.googleapis.com https://*.gstatic.com https://*.google.com data: blob:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://*.google.com; worker-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Results - PCCguessr</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./play.html">PCC<span>guessr</span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="./play.html" data-nav="play">Play</a>
+      <a href="./leaderboard.html" data-nav="leaderboard">Leaderboard</a>
+      <a href="./profile.html" data-nav="profile">Profile</a>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <h1>Game results</h1>
+    <div id="alerts"></div>
+    <div id="content" class="hidden">
+      <div class="card">
+        <p id="total" style="font-size:1.5rem;font-weight:800;margin:0 0 .5rem"></p>
+        <div id="notes"></div>
+        <div class="row">
+          <a class="btn btn-primary" href="./play.html">Play again</a>
+          <a class="btn btn-ghost" href="./leaderboard.html">Leaderboard</a>
+        </div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden"><div id="results-map" style="height:min(60vh,480px);background:#0b1222" aria-label="Map of guesses and answers"></div></div>
+      <div style="overflow-x:auto"><table class="results" id="results-table"></table></div>
+    </div>
+    <div id="loading" class="spinner spinner-center" role="status" aria-label="Loading"></div>
+  </main>
+  <footer>
+    <p style="margin:0">Unofficial student project &mdash; not affiliated with or endorsed by PCC &middot; <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script type="module" src="./js/results.js"></script>
+</body>
+</html>

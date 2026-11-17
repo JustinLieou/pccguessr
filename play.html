@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' blob: https://esm.sh https://maps.googleapis.com https://maps.gstatic.com https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.supabase.co https://esm.sh https://*.googleapis.com https://*.gstatic.com https://*.google.com data: blob:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://*.google.com; worker-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Play - PCCguessr</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    /* Small additions to styles.css for the round-result overlay. */
+    .result-card { position:absolute; left:50%; top:1rem; transform:translateX(-50%); z-index:30; width:min(26rem,92vw); margin:0; }
+    .guess-panel.is-result, .guess-panel.is-result:hover { width:min(640px,92vw); height:min(460px,62vh); }
+    @media (max-width: 699px) { .guess-panel.is-result { width:auto; height:58vh; } .result-card { top:.5rem; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./play.html">PCC<span>guessr</span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="./play.html" data-nav="play">Play</a>
+      <a href="./leaderboard.html" data-nav="leaderboard">Leaderboard</a>
+      <a href="./profile.html" data-nav="profile">Profile</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="start-screen" class="container">
+      <div class="card" style="max-width:34rem;margin:1rem auto">
+        <h1>Play</h1>
+        <div id="start-alerts"></div>
+        <p id="intro">You will see a spot on campus in Street View. Click where you think it is on the map. 5 rounds, 2 minutes each.</p>
+        <p id="today" class="muted"></p>
+        <button id="start-btn" class="btn btn-primary" type="button">Start game</button>
+      </div>
+    </section>
+    <section id="game-screen" class="hidden">
+      <div class="hud" id="hud">
+        <div><span class="hud-label">Round</span><span class="hud-value" id="hud-round">1/5</span></div>
+        <div><span class="hud-label">Score</span><span class="hud-value" id="hud-score">0</span></div>
+        <div class="timer" id="timer"><span class="hud-label">Time</span><span class="hud-value" id="hud-time">2:00</span></div>
+        <button id="forfeit-btn" class="btn btn-ghost btn-small" type="button">Forfeit</button>
+        <button id="guess-btn" class="btn btn-primary btn-small" type="button" disabled>Guess</button>
+      </div>
+      <div class="play-layout">
+        <div id="pano" aria-label="Street View panorama"></div>
+        <div class="guess-panel" id="guess-panel">
+          <button class="guess-handle" id="map-handle" type="button" aria-expanded="false">Guess map</button>
+          <div id="guess-map" aria-label="Guess map"></div>
+        </div>
+        <div id="game-alerts" style="position:absolute;left:1rem;right:1rem;top:1rem;z-index:25;max-width:34rem"></div>
+        <div id="result-card" class="card result-card hidden" role="status">
+          <h2 id="result-title"></h2>
+          <p id="result-msg"></p>
+          <p id="result-scores" style="font-weight:700"></p>
+          <button id="next-btn" class="btn btn-primary" type="button">Next round</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p style="margin:0">Unofficial student project &mdash; not affiliated with or endorsed by PCC &middot; <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script type="module" src="./js/play.js"></script>
+</body>
+</html>

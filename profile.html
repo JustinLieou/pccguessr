@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' blob: https://esm.sh https://maps.googleapis.com https://maps.gstatic.com https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.supabase.co https://esm.sh https://*.googleapis.com https://*.gstatic.com https://*.google.com data: blob:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://*.google.com; worker-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Profile - PCCguessr</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./play.html">PCC<span>guessr</span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="./play.html" data-nav="play">Play</a>
+      <a href="./leaderboard.html" data-nav="leaderboard">Leaderboard</a>
+      <a href="./profile.html" data-nav="profile">Profile</a>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <h1>Profile</h1>
+    <div id="alerts"></div>
+    <div class="card">
+      <h2>Display name</h2>
+      <form id="name-form" novalidate>
+        <div class="field">
+          <label for="name">Display name</label>
+          <input id="name" name="name" type="text" maxlength="20" autocomplete="nickname" required aria-describedby="name-rules">
+          <p class="help" id="name-rules"></p>
+        </div>
+        <button id="save-btn" class="btn btn-primary" type="submit">Save name</button>
+      </form>
+    </div>
+    <div class="card">
+      <h2>My stats</h2>
+      <div class="admin-grid" id="stats"></div>
+    </div>
+    <div class="card">
+      <button id="signout-btn" class="btn btn-ghost" type="button">Sign out</button>
+    </div>
+  </main>
+  <footer>
+    <p style="margin:0">Unofficial student project &mdash; not affiliated with or endorsed by PCC &middot; <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script type="module" src="./js/profile.js"></script>
+</body>
+</html>

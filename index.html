@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' blob: https://esm.sh https://maps.googleapis.com https://maps.gstatic.com https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.supabase.co https://esm.sh https://*.googleapis.com https://*.gstatic.com https://*.google.com data: blob:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://*.google.com; worker-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sign in - PCCguessr</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./play.html">PCC<span>guessr</span></a>
+    <nav id="nav" aria-label="Main">
+      
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <div class="card" style="max-width:28rem;margin:1rem auto">
+      <h1>Sign in</h1>
+      <div id="alerts"></div>
+      <form id="email-form" novalidate>
+        <p id="intro">Enter your PCC email address and we will send you a 6-digit code.</p>
+        <div class="field">
+          <label for="email">PCC email</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@pcci.edu">
+          <p class="help" id="domain-hint"></p>
+        </div>
+        <button id="send-btn" class="btn btn-primary btn-block" type="submit">Send code</button>
+      </form>
+      <form id="code-form" class="hidden" novalidate>
+        <p id="sent-msg"></p>
+        <div class="field">
+          <label for="code">6-digit code</label>
+          <input id="code" name="code" class="otp-input" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required>
+        </div>
+        <button id="verify-btn" class="btn btn-primary btn-block" type="submit">Verify</button>
+        <div class="row" style="margin-top:.75rem;justify-content:space-between">
+          <button id="resend-btn" class="btn btn-ghost btn-small" type="button" disabled>Resend code</button>
+          <button id="change-btn" class="btn btn-ghost btn-small" type="button">Use a different email</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p style="margin:0">Unofficial student project &mdash; not affiliated with or endorsed by PCC &middot; <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script type="module" src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' blob: https://esm.sh https://maps.googleapis.com https://maps.gstatic.com https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.ggpht.com https://*.googleusercontent.com; connect-src 'self' https://*.supabase.co https://esm.sh https://*.googleapis.com https://*.gstatic.com https://*.google.com data: blob:; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://*.google.com; worker-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Admin - PCCguessr</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./play.html">PCC<span>guessr</span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="./play.html" data-nav="play">Play</a>
+      <a href="./leaderboard.html" data-nav="leaderboard">Leaderboard</a>
+      <a href="./profile.html" data-nav="profile">Profile</a>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <h1>Admin</h1>
+    <div id="alerts"></div>
+
+    <section class="card" id="sec-locations">
+      <div class="card-title"><h2>Locations</h2></div>
+      <p class="muted" id="loc-hint">Click the map to look for Street View coverage.</p>
+      <div id="loc-alerts"></div>
+      <div id="admin-map" style="height:340px;background:#0b1222;border-radius:6px" aria-label="Campus map"></div>
+      <div class="row" style="margin:.6rem 0">
+        <label style="display:inline-flex;gap:.4rem;align-items:center;margin:0;font-weight:400"><input type="checkbox" id="outdoor-only" checked> Outdoor (official) coverage only</label>
+      </div>
+      <div id="preview-wrap" class="hidden">
+        <div id="admin-pano" style="height:340px;background:#0b1222;border-radius:6px" aria-label="Street View preview"></div>
+        <p class="help" id="preview-info"></p>
+        <div class="field" style="margin-top:.6rem">
+          <label for="loc-name">Location name</label>
+          <input id="loc-name" type="text" maxlength="100" placeholder="e.g. Library steps">
+        </div>
+        <div class="row">
+          <button id="loc-save" class="btn btn-primary" type="button">Save location</button>
+          <button id="loc-save-new" class="btn btn-ghost hidden" type="button">Save as new</button>
+          <button id="loc-cancel" class="btn btn-ghost" type="button">Cancel</button>
+        </div>
+      </div>
+      <h3 style="margin-top:1.25rem">All locations</h3>
+      <div class="row" style="margin-bottom:.6rem">
+        <button id="check-all" class="btn btn-ghost btn-small" type="button">Check all panoramas</button>
+        <span id="check-status" class="muted"></span>
+      </div>
+      <div id="check-results"></div>
+      <div style="overflow-x:auto"><table class="results" id="loc-table"></table></div>
+    </section>
+
+    <section class="card" id="sec-players">
+      <div class="card-title"><h2>Players</h2></div>
+      <div id="player-alerts"></div>
+      <form id="player-form" class="row" novalidate>
+        <input id="player-q" type="text" placeholder="Search by display name" style="flex:1;min-width:12rem" aria-label="Search by display name">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+      <div id="player-list" style="margin-top:.75rem"></div>
+    </section>
+
+    <section class="card" id="sec-games">
+      <div class="card-title"><h2>Flagged games</h2></div>
+      <div id="game-alerts"></div>
+      <div id="game-list"></div>
+    </section>
+  </main>
+  <footer>
+    <p style="margin:0">Unofficial student project &mdash; not affiliated with or endorsed by PCC &middot; <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>

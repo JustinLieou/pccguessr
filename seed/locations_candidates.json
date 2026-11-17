@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Rebekah Horton Library",
+    "category": "academic",
+    "description": "Main campus library, named for Dr. Rebekah L. Horton and opened in the early 1990s.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Academic Center",
+    "category": "academic",
+    "description": "Large classroom building with a multimedia auditorium, labs and faculty offices, opened in 1985.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "MacKenzie Building",
+    "category": "academic",
+    "description": "Six-story academic building with classrooms, a banquet hall and a planetarium, named for a charter board member.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Administration Building",
+    "category": "academic",
+    "description": "Campus administrative offices building completed around 1980.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Dale Horton Auditorium",
+    "category": "worship_arts",
+    "description": "Performing arts auditorium used for chapel and church services, named for the father of the college's founder.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://pcci.edu/about/named-facilities.aspx"
+  },
+  {
+    "name": "Visual and Performing Arts Center",
+    "category": "worship_arts",
+    "description": "Music, art, speech and broadcasting facilities that includes a recital hall; formerly the Communicative Arts Center.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Crowne Centre",
+    "category": "worship_arts",
+    "description": "Large multipurpose complex with a rotating auditorium stage and two chapels.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Mullenix Chapel",
+    "category": "worship_arts",
+    "description": "Former church building, renamed in 2015, used for concerts, recitals and weddings.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Crawford Chapel",
+    "category": "worship_arts",
+    "description": "Chapel and reception space named for Dr. William Crawford and Bev Crawford.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://pcci.edu/about/named-facilities.aspx"
+  },
+  {
+    "name": "Taylor Chapel",
+    "category": "worship_arts",
+    "description": "Chapel named for Pastor Bob Taylor.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://pcci.edu/about/named-facilities.aspx"
+  },
+  {
+    "name": "Arlin R. Horton Sports Center",
+    "category": "athletics",
+    "description": "Sports complex with a basketball arena, ice rink, bowling lanes and racquetball courts, named for the college's founder.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "John Ray Hall Field House",
+    "category": "athletics",
+    "description": "Field house named for a Pensacola Christian School board member, which hosted the college's first home games in 1981.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Grant Field",
+    "category": "athletics",
+    "description": "Outdoor field named for David Grant.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://pcci.edu/about/named-facilities.aspx"
+  },
+  {
+    "name": "Swim Center",
+    "category": "athletics",
+    "description": "Indoor pool with shallow, racing and diving areas, opened in 1986.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Four Winds",
+    "category": "dining",
+    "description": "Large dining hall with an all-you-can-eat food court and over 1,600 seats; the name reflects the international student body.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "The Palms",
+    "category": "dining",
+    "description": "Fast-food restaurant in the Commons area, expanded and renamed in 2016.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Varsity and Commons",
+    "category": "dining",
+    "description": "Student dining and social complex that includes a dining hall, bowling alley, bookstore and post office.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Ballard Hall",
+    "category": "residence",
+    "description": "Early campus building from 1974 that served several purposes before becoming a residence hall, named for Bessie Ballard.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Coberly Hall",
+    "category": "residence",
+    "description": "Residence hall from the mid-1970s, named for a Pensacola businessman who chaired the charter board.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Griffith Tower",
+    "category": "residence",
+    "description": "Nine-story women's residence tower built in 1981 and named for Vea Griffith.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Dixon Tower",
+    "category": "residence",
+    "description": "Nine-story women's residence tower named for Doris Dixon.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Bradley Tower",
+    "category": "residence",
+    "description": "Ten-story women's residence hall named for Mrs. Quirey Bradley, with soundproof piano practice rooms.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://www.pcci.edu/campus-life/residence-halls.aspx"
+  },
+  {
+    "name": "Young Tower",
+    "category": "residence",
+    "description": "Men's residence hall named for William F. Young, with soundproof piano practice rooms.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://www.pcci.edu/campus-life/residence-halls.aspx"
+  },
+  {
+    "name": "Rice Tower",
+    "category": "residence",
+    "description": "Eleven-story men's residence hall named for Dr. Bill Rice III, with soundproof piano practice rooms.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://www.pcci.edu/campus-life/residence-halls.aspx"
+  },
+  {
+    "name": "Cogeneration Plant",
+    "category": "other",
+    "description": "Campus power plant that supplied electricity, heating and cooling and also served as an engineering lab.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Campus House",
+    "category": "other",
+    "description": "Affordable guest hotel for families and visitors.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Graf Clinic",
+    "category": "other",
+    "description": "Campus medical clinic named for Dr. George Graf, the college's first consulting physician.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Campanile",
+    "category": "landmark",
+    "description": "Six-story tower at the center of campus that houses a carillon of bells.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "Water Tower",
+    "category": "landmark",
+    "description": "Tall tank that holds about one million gallons of water to keep campus water pressure up.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  },
+  {
+    "name": "West Campus",
+    "category": "landmark",
+    "description": "Waterfront property on Perdido Bay used for sailing, rowing and recreation.",
+    "approx_lat": null,
+    "approx_lng": null,
+    "coord_confidence": "none",
+    "source_url": "https://50years.pcci.edu/buildings/"
+  }
+]
