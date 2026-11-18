@@ -7,7 +7,7 @@
  * NEVER put any of these in this repo or on the client: the Supabase service_role key, the database password,
  * an SMTP / Resend API key, or the JWT secret.
  */
-export const SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';
+export const SUPABASE_URL = 'https://irlweyfzlnjhlumjxxmn.supabase.co';
 export const SUPABASE_ANON_KEY = 'YOUR-ANON-KEY';      // public by design; RLS/RPC protect data
 export const GOOGLE_MAPS_KEY = 'YOUR-MAPS-KEY';         // public by design; MUST be referrer + API restricted
 export const ALLOWED_DOMAINS = ['pcci.edu', 'students.pcci.edu']; // TO CONFIRM; display/UX only, not security
